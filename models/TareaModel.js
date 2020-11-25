@@ -5,6 +5,8 @@ const TareaSchema = mongoose.Schema({
     type: String,
     required: true,
     trim: true,
+    lowercase: true
+
   },
   creador: {
     type: mongoose.Schema.Types.ObjectId,

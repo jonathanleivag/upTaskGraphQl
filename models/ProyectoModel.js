@@ -5,7 +5,8 @@ const ProyectoSchema = mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    lowercase: true
+    lowercase: true,
+    unique: true,
   },
   creador: {
     type: mongoose.Schema.Types.ObjectId,

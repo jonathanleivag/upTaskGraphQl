@@ -8,6 +8,7 @@ const typeDefs = gql`
   type Proyecto {
     nombre: String
     id: ID
+    resp: String
   }
 
   type Tarea {
@@ -43,7 +44,7 @@ const typeDefs = gql`
 
   input TareaInput {
     nombre: String!
-    proyecto: String!
+    proyecto: String
   }
 
   type Mutation {
